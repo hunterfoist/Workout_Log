@@ -1,9 +1,9 @@
 const Sequelize = require("sequelize");
 
 const sequelize = new Sequelize(
-  "blue-server-challenges",
+  "workout-log",
   "postgres",
-  "PassWordGoesHere",
+  "password",
   {
     host: "localhost",
     dialect: "postgres",
@@ -12,7 +12,7 @@ const sequelize = new Sequelize(
 
 sequelize.authenticate().then(
   function () {
-    console.log("Connected to blue-server-challenges postgres database!");
+    console.log("Connected to workout log postgres database!");
   },
   function (err) {
     console.log(err);
